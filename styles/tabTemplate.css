@@ -1,0 +1,13 @@
+.tab-container{
+    display: flex;
+    flex:1;
+}
+
+.tab-header{
+    flex:1;
+    text-align: center;
+}
+
+.tab-header.active{
+    background-color: yellow;
+}

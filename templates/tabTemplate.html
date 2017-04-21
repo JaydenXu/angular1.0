@@ -1,0 +1,8 @@
+<div id="tabTemplate" class="tab-container">
+    <div ng-repeat="tab in tabConfig.tabList track by $index"
+         ng-class="$index===tabConfig.activeIndex ? 'tab-header active' : 'tab-header'">
+        <div data-current-index="{{$index}}">{{tab.tabName}}</div>
+    </div>
+
+</div>
+<div ng-transclude></div>
